@@ -3,6 +3,8 @@ project(example)
 
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
+include(igl_add_tutorial)
+
 # Libigl
 include(libigl)
 
@@ -10,9 +12,9 @@ include(libigl)
 igl_include(glfw)
 # Other modules you could enable
 #igl_include(embree)
-#igl_include(imgui)
-#igl_include(opengl)
-#igl_include(stb)
+igl_include(imgui)
+igl_include(opengl)
+igl_include(stb)
 #igl_include(predicates)
 #igl_include(xml)
 #igl_include(copyleft cgal)
@@ -24,13 +26,17 @@ igl_include(glfw)
 #igl_include(restricted mosek)
 #igl_include(restricted triangle)
 
+
+
+add_subdirectory(tutorial)
+
 # Add your project files
-file(GLOB SRC_FILES *.cpp)
-add_executable(${PROJECT_NAME} ${SRC_FILES})
+# file(GLOB SRC_FILES *.cpp)
+# add_executable(${PROJECT_NAME} ${SRC_FILES})
 
 # Link igl (and the glfw module) to your project
-target_link_libraries(${PROJECT_NAME} PUBLIC 
-  igl::glfw
+# target_link_libraries(${PROJECT_NAME} PUBLIC 
+#   igl::glfw
   ## Other modules you could link to
   # igl::embree
   # igl::imgui
@@ -46,4 +52,4 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   # igl_restricted::matlab
   # igl_restricted::mosek
   # igl_restricted::triangle
-  )
+  # )
