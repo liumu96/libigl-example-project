@@ -61,7 +61,7 @@ if(LIBIGL_TUTORIALS_CHAPTER1)
 endif()
 
 # Chapter 4
-if(LIBIGL_TUTORIALS_CHAPTER4)
+if(LIBIGL_TUTORIALS_CHAPTER1)
     igl_add_tutorial(401_BiharmonicDeformation igl::glfw)
     igl_add_tutorial(402_PolyharmonicDeformation igl::glfw)
     igl_add_tutorial(403_BoundedBiharmonicWeights igl::glfw)
