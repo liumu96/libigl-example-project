@@ -26,7 +26,9 @@ igl_include(stb)
 #igl_include(restricted mosek)
 #igl_include(restricted triangle)
 
-
+set(DATA_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/data)
+set(DEST_DATA_FOLDER ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${DATA_FOLDER} DESTINATION ${DEST_DATA_FOLDER})
 
 add_subdirectory(tutorial)
 

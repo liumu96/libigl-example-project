@@ -26,8 +26,8 @@ function(igl_add_tutorial name)
         # ${APPLE_LIBS}
         igl::core
         igl::tutorial_data
+        ${DEST_DATA_FOLDER}
         ${ARGN}
     )
-
     set_target_properties(${name} PROPERTIES FOLDER Libigl_Tutorials)
 endfunction()
