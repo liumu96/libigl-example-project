@@ -1,6 +1,6 @@
 # Choose which chapters to compile
 option(LIBIGL_TUTORIALS_CHAPTER1 "Compile libigl tutorials chapter 1" ON)
-option(LIBIGL_TUTORIALS_CHAPTER2 "Compile libigl tutorials chapter 2" OFF)
+option(LIBIGL_TUTORIALS_CHAPTER2 "Compile libigl tutorials chapter 2" ON)
 option(LIBIGL_TUTORIALS_CHAPTER3 "Compile libigl tutorials chapter 3" OFF)
 option(LIBIGL_TUTORIALS_CHAPTER4 "Compile libigl tutorials chapter 4" OFF)
 option(LIBIGL_TUTORIALS_CHAPTER5 "Compile libigl tutorials chapter 5" OFF)
@@ -40,7 +40,7 @@ if(LIBIGL_TUTORIALS_CHAPTER1)
 endif()
 
 # Chapter 2
-if(LIBIGL_TUTORIALS_CHAPTER2)
+if(LIBIGL_TUTORIALS_CHAPTER1)
     igl_add_tutorial(201_Normals igl::glfw)
     igl_add_tutorial(202_GaussianCurvature igl::glfw)
     igl_add_tutorial(203_CurvatureDirections igl::glfw)
