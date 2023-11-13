@@ -51,7 +51,7 @@ if(LIBIGL_TUTORIALS_CHAPTER1)
 endif()
 
 # Chapter 3
-if(LIBIGL_TUTORIALS_CHAPTER3)
+if(LIBIGL_TUTORIALS_CHAPTER1)
     igl_add_tutorial(301_Slice igl::glfw)
     igl_add_tutorial(302_Sort igl::glfw)
     igl_add_tutorial(303_LaplaceEquation igl::glfw)
