@@ -74,7 +74,7 @@ if(LIBIGL_TUTORIALS_CHAPTER1)
 endif()
 
 # Chapter 5
-if(LIBIGL_TUTORIALS_CHAPTER5)
+if(LIBIGL_TUTORIALS_CHAPTER1)
     igl_add_tutorial(501_HarmonicParam igl::glfw)
     igl_add_tutorial(502_LSCMParam igl::glfw)
     igl_add_tutorial(503_ARAPParam igl::glfw)
